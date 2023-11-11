@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Checker</title>
+</head>
+<body>
+    <h1>Student Result Checker</h1>
+    <form method="POST">
+        <label for="student_name">Enter Student Name: </label>
+        <input type="text" name="student_name" id="student_name" required>
+        <input type="submit" value="Check Result">
+    </form>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
